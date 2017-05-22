@@ -26,7 +26,8 @@ function defaultSettings(extName) {
       };
     case 'less':
       return {
-        regexp: /^\s*@import\s*(?:\([\w, ]+\)\s*)?(?:(?:url\()?['"]?([^'")]+)['"]?)/
+        regexp: /^\s*@import\s*(?:\([\w, ]+\)\s*)?(?:(?:url\()?['"]?([^'")]+)['"]?)/,
+        globDeps: true
       };
     case 'sass':
     case 'scss':
